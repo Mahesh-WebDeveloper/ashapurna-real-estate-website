@@ -1,0 +1,19 @@
+/* Remove default arrow background */
+.slick-prev, .slick-next {
+    background: none !important; /* No background */
+    z-index: 1; /* Ensure arrows are above content */
+    display: block; /* Make sure arrows are visible */
+}
+
+/* Style the arrow icons */
+.slick-prev:before, .slick-next:before {
+    color: black !important; /* Set arrow color to black */
+    font-size: 24px; /* Adjust arrow size */
+    opacity: 1; /* Ensure full visibility */
+}
+
+/* Optional: Hover effect */
+.slick-prev:hover:before, .slick-next:hover:before {
+    color: red; /* Change arrow color on hover */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
